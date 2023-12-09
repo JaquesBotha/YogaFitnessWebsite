@@ -1,0 +1,22 @@
+{
+  "name": "yogafitnesswebsite",
+  "version": "1.0.0",
+  "description": "Yoga Studio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaquesBotha/YogaFitnessWebsite.git"
+  },
+  "author": "JCBCB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaquesBotha/YogaFitnessWebsite/issues"
+  },
+  "homepage": "https://github.com/JaquesBotha/YogaFitnessWebsite#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1"
+  }
+}
