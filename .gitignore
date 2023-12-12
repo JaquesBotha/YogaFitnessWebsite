@@ -1,1 +1,9 @@
+# Node.js related
 node_modules/
+npm-debug.log
+
+# IDE and Editors
+.idea/
+.vscode/
+*.swp
+*.swo

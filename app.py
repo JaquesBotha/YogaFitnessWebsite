@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-app = Flask(__name__, template_folder='src/templates')
+app = Flask(__name__, template_folder='dist', static_folder='dist')
 
 @app.route('/')
 

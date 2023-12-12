@@ -1,10 +1,11 @@
 {
-  "name": "yogafitnesswebsite",
+  "name": "yogafitness",
   "version": "1.0.0",
-  "description": "Yoga Studio Website",
+  "description": "Yoga Fitness Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"gulp watch\" \"webpack --watch\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,19 @@
   },
   "homepage": "https://github.com/JaquesBotha/YogaFitnessWebsite#readme",
   "devDependencies": {
-    "grunt": "^1.6.1"
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.2",
+    "css-loader": "^6.8.1",
+    "gulp": "^4.0.2",
+    "gulp-webp": "^5.0.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
   }
 }
