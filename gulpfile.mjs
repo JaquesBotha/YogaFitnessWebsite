@@ -21,11 +21,19 @@ gulp.task('css', function() {
 //Webp Conversion From JPG
 gulp.task('webp', function () {
     return gulp.src('src/img/*.jpg')
+    .pipe(webp({ quality: 98 }))
         .pipe(gulp.dest('dist/img/'));
 });
 //Webp Conversion From PNG
 gulp.task('webpPng', function () {
     return gulp.src('src/img/*.png')
+    .pipe(webp({ quality: 98 }))
+        .pipe(gulp.dest('dist/img/'));
+});
+
+//SVG Conversion
+gulp.task('Svg', function () {
+    return gulp.src('src/img/*.svg')
         .pipe(gulp.dest('dist/img/'));
 });
 
@@ -44,6 +52,7 @@ gulp.task('watch', function() {
     gulp.watch('src/js/**/*.js', gulp.series('js'));
     gulp.watch('src/img/*.jpg', gulp.series('webp'));
     gulp.watch('src/img/*.png', gulp.series('webpPng'));
+    gulp.watch('src/img/*.svg', gulp.series('Svg'));
     // Add other file types you want to watch
 });
 // Default task running all the above tasks

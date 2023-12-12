@@ -7,8 +7,34 @@
     <script src="{{ url_for('static', filename='js/bundle.js') }}"></script>
 </head>
 <body>
-    <h1>Thisa is aaasdsd test</h1>
-    <p>This is sa sample sdfgsdfgsdfgpage.</p>
-    <a href="#" class="btn btn-primary text-white">Test</a>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='/img/PrimaryLogo.svg') }}" width="199px" height="39px" alt="Yoga Fitness Website Logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link d-flex align-items-center gap-2" href="#">
+                <span>Services</span>
+                <img src="{{ url_for('static', filename='/img/ArrowDown.svg') }}" width="14px" height="100%" alt="Arrow Down For Services" />
+              </a>
+              <a class="nav-link" href="#">
+                <span>Our Facility</span>
+                <img src="{{ url_for('static', filename='/img/ArrowDown.svg') }}" width="14px" height="100%" alt="Arrow Down For Services" />
+              </a>
+              <a class="nav-link">About</a>
+              <a class="nav-link">Contact</a>
+            </div>
+            <a class="btn btn-primary d-flex align-items-center gap-2">
+              <img src="{{ url_for('static', filename='/img/Basket.svg') }}" width="14px" height="100%" alt="Shopping Basket For Yoga Studio" />
+              <span>Shop Now</span>  
+            </a>
+          </div>
+        </div>
+      </nav>
 </body>    
 </html>

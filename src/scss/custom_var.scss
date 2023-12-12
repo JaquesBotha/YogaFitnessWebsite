@@ -33,5 +33,23 @@ $danger:        $red;
 $light:         #F6F9FC;
 $dark:          $gray-800;
 
+//Font Declaration
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
+$font-weight-semibold:        600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
 //Base Body Settings
 $body-color: $gray-800;
+
+//Form / Button Settings 
+$input-btn-padding-y: .62rem;
+$input-btn-padding-x: 1rem;
+$btn-font-weight:$font-weight-medium;
+
+//Nav Settings
+$nav-link-font-weight:$font-weight-medium;
+$navbar-nav-link-padding-x:1.5rem;
