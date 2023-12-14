@@ -34,16 +34,23 @@ $light:         #F6F9FC;
 $dark:          $gray-800;
 
 //Font Declaration
-$font-weight-lighter:         lighter !default;
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-medium:          500 !default;
-$font-weight-semibold:        600 !default;
-$font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+//Par Settings
+$line-height-lg: 2.125rem;
 
 //Base Body Settings
 $body-color: $gray-800;
+
+//Form /Button Settings
+$input-btn-padding-y: .375rem ;
+$input-btn-padding-x: .75rem ;
 
 //Form / Button Settings 
 $input-btn-padding-y: .62rem;
@@ -53,3 +60,24 @@ $btn-font-weight:$font-weight-medium;
 //Nav Settings
 $nav-link-font-weight:$font-weight-medium;
 $navbar-nav-link-padding-x:1.5rem;
+
+//Buttons
+$input-btn-padding-y-lg:      1rem;
+$input-btn-padding-x-lg:      1.5rem;
+
+//Misc
+$enable-negative-margins: true;
+
+//Spacing
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 10
+);

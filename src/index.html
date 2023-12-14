@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Website</title>
     <script src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="{{ url_for('static', filename='/img/PrimaryLogo.svg') }}" width="199px" height="39px" alt="Yoga Fitness Website Logo" />
+            <img src="/img/PrimaryLogo.svg" width="199px" height="39px" alt="Yoga Fitness Website Logo" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,21 +23,41 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link d-flex align-items-center gap-2" href="#">
                 <span>Services</span>
-                <img src="{{ url_for('static', filename='/img/ArrowDown.svg') }}" width="14px" height="100%" alt="Arrow Down For Services" />
+                <img src="/img/ArrowDown.svg" width="14px" height="100%" alt="Arrow Down For Services" />
               </a>
               <a class="nav-link" href="#">
                 <span>Our Facility</span>
-                <img src="{{ url_for('static', filename='/img/ArrowDown.svg') }}" width="14px" height="100%" alt="Arrow Down For Services" />
+                <img src="/img/ArrowDown.svg" width="14px" height="100%" alt="Arrow Down For Services" />
               </a>
               <a class="nav-link">About</a>
               <a class="nav-link">Contact</a>
             </div>
             <a class="btn btn-primary d-flex align-items-center gap-2">
-              <img src="{{ url_for('static', filename='/img/Basket.svg') }}" width="14px" height="100%" alt="Shopping Basket For Yoga Studio" />
+              <img src="/img/Basket.svg" width="14px" height="100%" alt="Shopping Basket For Yoga Studio" />
               <span>Shop Now</span>  
             </a>
           </div>
         </div>
-      </nav>
+    </nav>
+    <section class="p-7 slide-section" style="background-image: url(/img/hero-slide.webp);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <h1 class="display-3 mb-5">Yoga First <span class="d-block">Fitness Always</span></h1>
+            <p class="pe-lg-4 lh-lg fs-5 mb-5">
+                Welcome to Great Fitness, Los Angeles' premier destination for yoga and fitness enthusiasts. 
+                Nestled in the vibrant heart of the city, we offer a sanctuary where mind, body, and spirit align.
+            </p>
+            <div class="d-flex flex-column flex-lg-row gap-3 align-items-center">
+                <a href="#" class="btn btn-primary btn-lg fw-bold">Book A Session</a>
+                <a href="#" class="btn btn-transparent btn-lg d-flex align-items-center gap-3 fw-bold">
+                  <span class="lh-1 mt-n1">Contact Us</span>
+                  <img src="/img/ArrowRight.svg" width="25px" height="25px" alt="Contact Us Arrow Right" />
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 </body>    
 </html>
