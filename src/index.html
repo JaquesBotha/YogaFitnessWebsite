@@ -1,215 +1,355 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Website</title>
-    <script src="{{ url_for('static', filename='js/bundle.js') }}"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Website</title>
+  <script src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/img/PrimaryLogo.svg" width="199px" height="39px" alt="Yoga Fitness Website Logo" />
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/img/PrimaryLogo.svg" width="199px" height="39px" alt="Yoga Fitness Website Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link d-flex align-items-center gap-2" href="#">
+            <span>Services</span>
+            <img src="/img/ArrowDown.svg" width="14px" height="100%" alt="Arrow Down For Services" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mx-auto">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <span>Services</span>
-                <img src="/img/ArrowDown.svg" width="14px" height="100%" alt="Arrow Down For Services" />
-              </a>
-              <a class="nav-link" href="#">
-                <span>Our Facility</span>
-                <img src="/img/ArrowDown.svg" width="14px" height="100%" alt="Arrow Down For Services" />
-              </a>
-              <a class="nav-link">About</a>
-              <a class="nav-link">Contact</a>
-            </div>
-            <a class="btn btn-primary d-flex align-items-center gap-2">
-              <img src="/img/Basket.svg" width="14px" height="100%" alt="Shopping Basket For Yoga Studio" />
-              <span>Shop Now</span>  
+          <a class="nav-link" href="#">
+            <span>Our Facility</span>
+            <img src="/img/ArrowDown.svg" width="14px" height="100%" alt="Arrow Down For Services" />
+          </a>
+          <a class="nav-link">About</a>
+          <a class="nav-link">Contact</a>
+        </div>
+        <a class="btn btn-primary d-flex align-items-center gap-2">
+          <img src="/img/Basket.svg" width="14px" height="100%" alt="Shopping Basket For Yoga Studio" />
+          <span>Shop Now</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <section class="p-7 slide-section" style="background-image: url(/img/hero-slide.webp);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <h1 class="display-3 mb-5">Yoga First <span class="d-block">Fitness Always</span></h1>
+          <p class="pe-lg-4 lh-lg fs-5 mb-5">
+            Welcome to Great Fitness, Los Angeles' premier destination for yoga and fitness enthusiasts.
+            Nestled in the vibrant heart of the city, we offer a sanctuary where mind, body, and spirit align.
+          </p>
+          <div class="d-flex flex-column flex-lg-row gap-3 align-items-center">
+            <a href="#" class="btn btn-primary btn-lg fw-bold border-0">Book A Session</a>
+            <a href="#" class="btn btn-transparent btn-lg d-flex align-items-center gap-3 fw-bold border-0 shadow-none">
+              <span class="lh-1 mt-n1">Contact Us</span>
+              <img src="/img/ArrowRight.svg" width="25px" height="25px" alt="Contact Us Arrow Right" />
             </a>
           </div>
         </div>
-    </nav>
-    <section class="p-7 slide-section" style="background-image: url(/img/hero-slide.webp);">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-6">
-            <h1 class="display-3 mb-5">Yoga First <span class="d-block">Fitness Always</span></h1>
-            <p class="pe-lg-4 lh-lg fs-5 mb-5">
-                Welcome to Great Fitness, Los Angeles' premier destination for yoga and fitness enthusiasts. 
-                Nestled in the vibrant heart of the city, we offer a sanctuary where mind, body, and spirit align.
+      </div>
+    </div>
+  </section>
+  <section class="p-6 bg-light position-relative z-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="display-4 fw-regular mb-0">Our Services</h2>
+          <p class="mb-5 text-capitalize fw-medium">This is the sub Heading </p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <div class="bg-primary rounded-3 py-6 px-4 text-white text-center shadow-lg">
+            <h3 class="mb-3 fw-medium">Get Started With Your Free Trial</h3>
+            <p class="mb-4 lh-lg">Libero nunc facilisis auctor diam suspendisse pharetra nisi. Mauris ornare imperdiet.
             </p>
-            <div class="d-flex flex-column flex-lg-row gap-3 align-items-center">
-                <a href="#" class="btn btn-primary btn-lg fw-bold border-0">Book A Session</a>
-                <a href="#" class="btn btn-transparent btn-lg d-flex align-items-center gap-3 fw-bold border-0 shadow-none">
-                  <span class="lh-1 mt-n1">Contact Us</span>
-                  <img src="/img/ArrowRight.svg" width="25px" height="25px" alt="Contact Us Arrow Right" />
-                </a>
-            </div>
+            <a href="#" class="btn btn-light text-primary mb-0">Get Started Today</a>
+          </div>
+        </div>
+        <div class="col-md-3 px-lg-4">
+          <div class="bg-white rounded-3 p-4 text-center">
+            <img src="img/SpaIcon.svg" alt="Spa Icon" width="100%" height="80px" class="mb-4">
+            <h3 class="mb-3 fw-bold fs-4">Spa Area</h3>
+            <p class="mb-4 lh-lg">Libero nunc facilisis auctor diam suspendisse pharetra nisi. Mauris ornare imperdiet.
+            </p>
+            <a href="#" class="btn btn-sm btn-outline-primary border-2 text-primary mb-0 fw-bold">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-3 px-lg-4">
+          <div class="bg-white rounded-3 p-4 text-center">
+            <img src="img/ChangeRoom.svg" alt="Changing Room Icon" width="100%" height="80px" class="mb-4">
+            <h3 class="mb-3 fw-bold fs-4">Changing Rooms</h3>
+            <p class="mb-4 lh-lg">Libero nunc facilisis auctor diam suspendisse pharetra nisi. Mauris ornare imperdiet.
+            </p>
+            <a href="#" class="btn btn-sm btn-outline-primary border-2 text-primary mb-0 fw-bold">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="bg-white rounded-3 p-4 text-center">
+            <img src="img/FreeIcon.svg" alt="Free Lessons Icon" width="100%" height="80px" class="mb-4">
+            <h3 class="mb-3 fw-bold fs-4">Free Lessons</h3>
+            <p class="mb-4 lh-lg">Libero nunc facilisis auctor diam suspendisse pharetra nisi. Mauris ornare imperdiet.
+            </p>
+            <a href="#" class="btn btn-sm btn-outline-primary border-2 text-primary mb-0 fw-bold">Learn More</a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="p-6 bg-light position-relative z-2">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-              <h2 class="display-4 fw-regular mb-0">Our Services</h2>
-              <p class="mb-5 text-capitalize fw-medium">This is the sub Heading </p>
-            </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-md-3">
-              <div class="bg-primary rounded-3 py-6 px-4 text-white text-center shadow-lg">
-                <h3 class="mb-3 fw-medium">Get Started With Your Free Trial</h3>
-                <p class="mb-4 lh-lg">Libero nunc facilisis auctor diam suspendisse pharetra nisi. Mauris ornare imperdiet.</p>
-                <a href="#" class="btn btn-light text-primary mb-0">Get Started Today</a>
-              </div>
-          </div>
-          <div class="col-md-3 px-lg-4">
-            <div class="bg-white rounded-3 p-4 text-center">
-              <img src="img/SpaIcon.svg" alt="Spa Icon" width="100%" height="80px" class="mb-4">
-              <h3 class="mb-3 fw-bold fs-4">Spa Area</h3>
-              <p class="mb-4 lh-lg">Libero nunc facilisis auctor diam suspendisse pharetra nisi. Mauris ornare imperdiet.</p>
-              <a href="#" class="btn btn-sm btn-outline-primary border-2 text-primary mb-0 fw-bold">Learn More</a>
-            </div>
-          </div>
-          <div class="col-md-3 px-lg-4">
-            <div class="bg-white rounded-3 p-4 text-center">
-              <img src="img/ChangeRoom.svg" alt="Changing Room Icon" width="100%" height="80px" class="mb-4">
-              <h3 class="mb-3 fw-bold fs-4">Changing Rooms</h3>
-              <p class="mb-4 lh-lg">Libero nunc facilisis auctor diam suspendisse pharetra nisi. Mauris ornare imperdiet.</p>
-              <a href="#" class="btn btn-sm btn-outline-primary border-2 text-primary mb-0 fw-bold">Learn More</a>
-            </div> 
-          </div>
-          <div class="col-md-3">
-            <div class="bg-white rounded-3 p-4 text-center">
-              <img src="img/FreeIcon.svg" alt="Free Lessons Icon" width="100%" height="80px" class="mb-4">
-              <h3 class="mb-3 fw-bold fs-4">Free Lessons</h3>
-              <p class="mb-4 lh-lg">Libero nunc facilisis auctor diam suspendisse pharetra nisi. Mauris ornare imperdiet.</p>
-              <a href="#" class="btn btn-sm btn-outline-primary border-2 text-primary mb-0 fw-bold">Learn More</a>
-            </div>
+    </div>
+  </section>
+  <section class="position-relative z-1">
+    <img src="img/Wave.svg" alt="Wave Vector" width="100%" height="181px">
+  </section>
+  <section class="pb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-12 text-center">
+            <h2 class="display-4 fw-regular mb-0">Latest Classes</h2>
+            <p class="mb-5 text-capitalize fw-medium">This is the sub Heading </p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="position-relative z-1">
-      <img src="img/Wave.svg" alt="Wave Vector" width="100%" height="181px">      
-    </section>
-    <section class=" pb-6">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-              <div class="col-md-12 text-center">
-                <h2 class="display-4 fw-regular mb-0">Latest Classes</h2>
-                <p class="mb-5 text-capitalize fw-medium">This is the sub Heading </p>
-              </div>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-md-12">
-            <ul class="nav nav-tabs mb-5 border-0 tabs-container-classes justify-content-center gap-3" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Beginners Yoga</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Stretching</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Fly-Yoga</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Yin Yoga</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Flo Yoga</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                <div class="row">
-                  <div class="col-md-6 pe-lg-5">
-                    <img src="img/ImageLeft.webp" alt="Image Left" class="rounded-3">
-                  </div>
-                  <div class="col-md-6 ps-lg-5">
-                    <h3 class="fw-bold">Beginners Yoga</h3>
-                    <p class="lh-lg mb-5">
-                        Lorem ipsum dolor sit amet consectetur. Sed sagittis dis vitae suspendisse 
-                        adipiscing magna arcu et nibh. Felis lectus sit aliquet gravida pretium dui netus et. Lacus in molestie in diam lorem.
-                    </p>
-                    <div class="row mb-5">
-                      <div class="col-md-6">
-                        <div class="number-icon">
-                          <span class="text-primary">1</span>
-                        </div>
-                        <h4 class="mb-3 fw-bold">Free Rugs</h4>
-                        <p class="mb-0 lh-lg">
-                          Felis lectus sit aliquet gravida 
-                          pretium dui netus et. Lacus in molestie in diam lorem.
-                        </p>
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <ul class="nav nav-tabs mb-5 border-0 tabs-container-classes justify-content-center gap-3" id="myTab"
+            role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Beginners Yoga</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Stretching</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Fly-Yoga</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Yin Yoga</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Flo Yoga</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">
+              <div class="row">
+                <div class="col-md-6 pe-lg-5">
+                  <img src="img/ImageLeft.webp" alt="Image Left" class="rounded-3">
+                </div>
+                <div class="col-md-6 ps-lg-5">
+                  <h3 class="fw-bold">Beginners Yoga</h3>
+                  <p class="lh-lg mb-5">
+                    Lorem ipsum dolor sit amet consectetur. Sed sagittis dis vitae suspendisse
+                    adipiscing magna arcu et nibh. Felis lectus sit aliquet gravida pretium dui netus et. Lacus in
+                    molestie in diam lorem.
+                  </p>
+                  <div class="row mb-5">
+                    <div class="col-md-6">
+                      <div class="number-icon">
+                        <span class="text-primary">1</span>
                       </div>
-                      <div class="col-md-6">
-                        <div class="number-icon">
-                          <span class="text-primary">2</span>
-                        </div>
-                        <h4 class="mb-3 fw-bold">Changing Room</h4>
-                        <p class="mb-0 lh-lg">
-                          Felis lectus sit aliquet gravida 
-                          pretium dui netus et. Lacus in molestie in diam lorem.
-                        </p>
-                      </div>
+                      <h4 class="mb-3 fw-bold">Free Rugs</h4>
+                      <p class="mb-0 lh-lg">
+                        Felis lectus sit aliquet gravida
+                        pretium dui netus et. Lacus in molestie in diam lorem.
+                      </p>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="number-icon">
-                          <span class="text-primary">3</span>
-                        </div>
-                        <h4 class="mb-3 fw-bold">Free Rugs</h4>
-                        <p class="mb-0 lh-lg">
-                          Felis lectus sit aliquet gravida 
-                          pretium dui netus et. Lacus in molestie in diam lorem.
-                        </p>
+                    <div class="col-md-6">
+                      <div class="number-icon">
+                        <span class="text-primary">2</span>
                       </div>
-                      <div class="col-md-6">
-                        <div class="number-icon">
-                          <span class="text-primary">4</span>
-                        </div>
-                        <h4 class="mb-3 fw-bold">Free Rugs</h4>
-                        <p class="mb-0 lh-lg">
-                          Felis lectus sit aliquet gravida 
-                          pretium dui netus et. Lacus in molestie in diam lorem.
-                        </p>
+                      <h4 class="mb-3 fw-bold">Changing Room</h4>
+                      <p class="mb-0 lh-lg">
+                        Felis lectus sit aliquet gravida
+                        pretium dui netus et. Lacus in molestie in diam lorem.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="number-icon">
+                        <span class="text-primary">3</span>
                       </div>
+                      <h4 class="mb-3 fw-bold">Free Rugs</h4>
+                      <p class="mb-0 lh-lg">
+                        Felis lectus sit aliquet gravida
+                        pretium dui netus et. Lacus in molestie in diam lorem.
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="number-icon">
+                        <span class="text-primary">4</span>
+                      </div>
+                      <h4 class="mb-3 fw-bold">Free Rugs</h4>
+                      <p class="mb-0 lh-lg">
+                        Felis lectus sit aliquet gravida
+                        pretium dui netus et. Lacus in molestie in diam lorem.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                
-              </div>
-              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                
-              </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-              <a href="#" class="btn btn-primary fw-bold border-0">Get A Free Trial</a>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="#" class="btn btn-primary fw-bold border-0">Get A Free Trial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-dark py-6 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="display-4 fw-regular mb-0">Our Great <span class="text-primary">Team</span></h2>
+          <p class="mb-5 text-capitalize fw-medium">This is the sub Heading </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-5 opacity-75">
+            At arcu neque aliquet laoreet. Id egestas mauris tincidunt ut nulla cras.
+            Non eget sem curabitur vehicula diam integer. Magna tortor dignissim imperdiet
+            pulvinar ante sed metus consequat in. Feugiat id ipsum lacinia nec nunc odio
+            pellentesque.
+          </p>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <img src="img/Img-01.webp" alt="Image-1" width="408px" height="350px" class="rounded-3 shadow">
+        </div>
+        <div class="col-md-4">
+          <img src="img/Img-02.webp" alt="Image-2" width="408px" height="350px" class="rounded-3 shadow">
+        </div>
+        <div class="col-md-4">
+          <img src="img/Img-03.webp" alt="Image-3" width="408px" height="350px" class="rounded-3 shadow">
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <img src="img/Img-04.webp" alt="Image-4" width="408px" height="350px" class="rounded-3 shadow">
+        </div>
+        <div class="col-md-4">
+          <img src="img/Img-05.webp" alt="Image-5" width="408px" height="350px" class="rounded-3 shadow">
+        </div>
+        <div class="col-md-4">
+          <img src="img/Img-06.webp" alt="Image-6" width="408px" height="350px" class="rounded-3 shadow">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="#" class="btn btn-primary fw-bold border-0">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-6 cta-section" style="background-image: url(/img/cta.webp);">
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-md-4">
+          <div class="bg-white rounded-2 shadow-lg p-5">
+            <h2 class="display-4 fw-normal mb-4">Free 30-Day Membership</h2>
+          <p class="lh-lg mb-5">
+            At arcu neque aliquet laoreet. Id egestas mauris tincidunt ut nulla cras. 
+            Non eget sem curabitur vehicula diam integer. Magna tortor dignissim 
+            imperdiet pulvinar ante sed metus consequat in. Feugiat id ipsum 
+            lacinia nec nunc odio pellentesque.
+          </p>
+          <div class="d-flex flex-column flex-lg-row gap-3 align-items-center">
+            <a href="#" class="btn btn-primary btn-lg fw-bold border-0">Book A Session</a>
+            <a href="#" class="btn btn-transparent btn-lg d-flex align-items-center gap-3 fw-bold border-0 shadow-none">
+              <span class="lh-1 mt-n1">Contact Us</span>
+              <img src="/img/ArrowRight.svg" width="25px" height="25px" alt="Contact Us Arrow Right" />
+            </a>
+          </div>
           </div>
         </div>
       </div>
-    </section>
-</body>    
+    </div>
+  </section>
+  <footer class="py-5">
+    <div class="container">
+      <div class="row border-1 border-bottom pb-4 mb-4 footer-nav-row">
+        <div class="col-md-6">
+            <img src="/img/PrimaryLogo.svg" width="199px" height="39px" alt="Yoga Fitness Website Logo" />
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <ul class="nav text-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Facility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex gap-3 align-items-center">
+            <a href="#">
+              <img src="img/social-icon-01.svg" alt="Instagram">
+            </a>
+            <a href="#">
+              <img src="img/social-icon-02.svg" alt="X">
+            </a>
+            <a href="#">
+              <img src="img/social-icon-03.svg" alt="Facebook">
+            </a>
+            <a href="#">
+              <img src="img/social-icon-04.svg" alt="Youtube">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 text-end">
+          <p class="fw-medium mb-0">Copyright 2024 | All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -12,11 +12,16 @@ body
     {
         font-family: 'Fredoka', sans-serif;
     }
-    .slide-section
+    .slide-section, .cta-section
     {
         background-repeat: no-repeat;
         background-size: cover;
         height: 56.25rem;
+    }
+
+    .cta-section
+    {
+        height: auto;
     }
 
     .number-icon
@@ -58,6 +63,14 @@ body
                     .fw-bold,
                     .text-dark;
             }
+        }
+    }
+
+    footer
+    {
+        .footer-nav-row
+        {
+            border-bottom-color: $gray-500;
         }
     }
 }
